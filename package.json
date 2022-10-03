@@ -1,0 +1,35 @@
+{
+  "name": "@n6ai/verify-commit-msg",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Sergej Samsonenko",
+  "description": "Commit message verification for simple-git-hooks.",
+  "type": "module",
+  "engines": {
+    "node": ">=v16.0.0"
+  },
+  "keywords": [
+    "n6ai",
+    "verify",
+    "commit",
+    "msg",
+    "simple-git-hooks"
+  ],
+  "main": "dist/main.js",
+  "bin": {
+    "@n6ai/verify-commit-msg": "dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "npm run test-pass",
+    "test-pass": "node dist/main.js \"./commit-msg/pass\"",
+    "test-fail": "node dist/main.js \"./commit-msg/fail\"",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.3"
+  }
+}
