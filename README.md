@@ -1,34 +1,26 @@
 # @n6ai/verify-commit-msg
 
-Simple executable to verify the format of a commit message. Intended to be used with [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks).
+Verifies the format of a commit message. Intended to be used with [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks).
 
 ## Setup
 
-Install packages:
-
-```bash
-npm i -D simple-git-hooks @n6ai/verify-commit-msg
-```
-
-Add `postinstall` script, change `@n6ai/verify-commit-msg` dependency to always be the latest and add a `commit-msg` hook to package.json:
+Add `postinstall` script and add a `commit-msg` hook to package.json:
 
 ```json
 {
   "scripts": {
     "postinstall": "simple-git-hooks"
   },
-  "devDependencies": {
-    "@n6ai/verify-commit-msg": "*"
-  },
   "simple-git-hooks": {
-    "commit-msg": "npx @n6ai/verify-commit-msg $1"
+    "commit-msg": "npx @n6ai/verify-commit-msg@latest $1"
   }
 }
 ```
 
-Run install again to finish the setup:
+Install packages and register git hooks:
+
 ```bash
-npm i
+npm i -D simple-git-hooks
 ```
 
 ## Commit message
