@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "Sergej Samsonenko",
-  "description": "Commit message verification for simple-git-hooks.",
+  "description": "N6 AI commit message verification for simple-git-hooks.",
   "type": "module",
   "engines": {
     "node": ">=v16.0.0"
@@ -14,6 +14,9 @@
     "commit",
     "msg",
     "simple-git-hooks"
+  ],
+  "files": [
+    "dist"
   ],
   "main": "dist/main.js",
   "bin": {

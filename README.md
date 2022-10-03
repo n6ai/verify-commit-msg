@@ -9,9 +9,12 @@ Install packages:
 npm i -D simple-git-hooks @n6ai/verify-commit-msg
 ```
 
-Add `commit-msg` hook to package.json:
+Add `postinstall` script and `commit-msg` hook to package.json:
 ```json
 {
+  "scripts": {
+    "postinstall": "simple-git-hooks"
+  },
   "simple-git-hooks": {
     "commit-msg": "@n6ai/verify-commit-msg $1"
   }
