@@ -1,6 +1,6 @@
 # @n6ai/verify-commit-msg
 
-Simple executable to verify the format of a commit message. Intended to be used with [simple-githooks](https://github.com/toplenboren/simple-git-hooks).
+Simple executable to verify the format of a commit message. Intended to be used with [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks).
 
 ## Setup
 
