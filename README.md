@@ -4,6 +4,12 @@ Verifies the format of a commit message. Intended to be used with [simple-git-ho
 
 ## Setup
 
+Install packages:
+
+```bash
+npm i -D simple-git-hooks
+```
+
 Add `postinstall` script and add a `commit-msg` hook to package.json:
 
 ```json
@@ -17,10 +23,10 @@ Add `postinstall` script and add a `commit-msg` hook to package.json:
 }
 ```
 
-Install packages and register git hooks:
+Register Git Hooks:
 
 ```bash
-npm i -D simple-git-hooks
+npm i
 ```
 
 ## Commit message
