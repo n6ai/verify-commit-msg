@@ -10,17 +10,25 @@ Install packages:
 npm i -D simple-git-hooks @n6ai/verify-commit-msg
 ```
 
-Add `postinstall` script and `commit-msg` hook to package.json:
+Add `postinstall` script, change `@n6ai/verify-commit-msg` dependency to always be the latest and add a `commit-msg` hook to package.json:
 
 ```json
 {
   "scripts": {
     "postinstall": "simple-git-hooks"
   },
+  "devDependencies": {
+    "@n6ai/verify-commit-msg": "*"
+  },
   "simple-git-hooks": {
-    "commit-msg": "@n6ai/verify-commit-msg $1"
+    "commit-msg": "npx @n6ai/verify-commit-msg $1"
   }
 }
+```
+
+Run install again to finish the setup:
+```bash
+npm i
 ```
 
 ## Commit message
