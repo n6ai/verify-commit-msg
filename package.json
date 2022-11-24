@@ -1,6 +1,6 @@
 {
   "name": "@n6ai/verify-commit-msg",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "author": "Sergej Samsonenko",
   "description": "N6 AI commit message verification for simple-git-hooks.",
