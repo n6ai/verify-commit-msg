@@ -5,6 +5,9 @@ on:
     branches:
       - main
   workflow_dispatch: # Allows to run this workflow manually from the Actions tab on GitHub.
+    inputs:
+      version:
+        description: Manual version release e.g. 1.4.9
 
 env:
   NODE_VERSION: 18
@@ -18,7 +21,7 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
           release-type: node
-          monorepo-tags: true
+          release-as: ${{ github.event.inputs.version }}
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
 
