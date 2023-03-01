@@ -25,16 +25,14 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "format": "prettier --write --cache .",
+    "format": "npx -y prettier --write --cache .",
     "test": "npm run test-pass",
     "test-pass": "node dist/main.js \"./commit-msg/pass\"",
     "test-fail": "node dist/main.js \"./commit-msg/fail\"",
-    "clean": "rimraf dist"
+    "clean": "npx -y rimraf dist"
   },
   "devDependencies": {
     "@types/node": "^18.7.23",
-    "prettier": "^2.7.1",
-    "rimraf": "^4.1.2",
     "typescript": "^4.8.3"
   }
 }
