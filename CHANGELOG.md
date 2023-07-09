@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/n6ai/verify-commit-msg/compare/v1.0.7...v1.1.0) (2023-07-09)
+
+
+### Features
+
+* update regex ([548ea9f](https://github.com/n6ai/verify-commit-msg/commit/548ea9fa29329703905a35056acdb4aeeb1ff7c1))
+
 ## [1.0.7](https://github.com/n6ai/verify-commit-msg/compare/v1.0.6...v1.0.7) (2022-11-25)
 
 
