@@ -27,8 +27,8 @@
     "dev": "tsc --watch",
     "format": "npx -y prettier --write --cache .",
     "test": "npm run test-pass",
-    "test-pass": "node dist/main.js \"./commit-msg/pass\"",
-    "test-fail": "node dist/main.js \"./commit-msg/fail\"",
+    "test-pass": "node dist/main.js \"./test/pass\"",
+    "test-fail": "node dist/main.js \"./test/fail\"",
     "clean": "npx -y rimraf dist"
   },
   "devDependencies": {
