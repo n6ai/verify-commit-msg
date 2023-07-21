@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/n6ai/verify-commit-msg/compare/v1.1.0...v1.2.0) (2023-07-21)
+
+
+### Features
+
+* allow breaking change `!` indicator ([aec7d55](https://github.com/n6ai/verify-commit-msg/commit/aec7d5518aec4bf604826eba465e2050ab0ad40c))
+
 ## [1.1.0](https://github.com/n6ai/verify-commit-msg/compare/v1.0.7...v1.1.0) (2023-07-09)
 
 
