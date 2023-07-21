@@ -34,5 +34,5 @@ npm i
 Messages must be matched by the following regex:
 
 ```text
-/^(revert: )?(feat|fix|docs|style|refactor|perf|test|build|ci|chore|types|release|deps)(\(.+\))?: .{1,50}/
+/^(revert: )?(feat|fix|docs|style|refactor|perf|test|build|ci|chore|types|release|deps)(\(.+\))?(\!)?: .{1,50}/
 ```

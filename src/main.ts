@@ -8,7 +8,7 @@ const msg = readFileSync(msgPath, 'utf-8').trim()
 
 const releaseRE = /^v\d/
 const commitRE =
-  /^(revert: )?(feat|fix|docs|style|refactor|perf|test|build|ci|chore|types|release|deps)(\(.+\))?: .{1,50}/
+  /^(revert: )?(feat|fix|docs|style|refactor|perf|test|build|ci|chore|types|release|deps)(\(.+\))?(\!)?: .{1,50}/
 
 if (!releaseRE.test(msg) && !commitRE.test(msg)) {
   console.error('ERROR: invalid commit message format.')
