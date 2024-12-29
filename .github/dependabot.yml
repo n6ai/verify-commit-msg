@@ -4,3 +4,10 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    groups:
+      minor-and-patch:
+        patterns:
+          - '*'
+        update-types:
+          - minor
+          - patch
