@@ -32,7 +32,7 @@
     "clean": "npx -y rimraf dist"
   },
   "devDependencies": {
-    "@types/node": "^20.2.5",
+    "@types/node": "^22.10.2",
     "typescript": "^5.0.3"
   }
 }
